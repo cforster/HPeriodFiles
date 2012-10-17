@@ -48,4 +48,16 @@ class IntStack
 	//System.out.println("resizing...");
 	stack=newStack;
     }
+
+
+    /*
+     * Size
+     * gives the current size of the stack.
+     * @author Charlie Forster
+     */
+    int size()
+    {
+	return top-1;
+    }
+
 }
