@@ -9,6 +9,12 @@ class IntStackTest
 	is.push(3);
 	is.push(4);
 	is.push(10);
+	is.push(5);
+	is.push(5);
+	is.push(3);
+	is.push(5);
+	is.mode();
+	is.mode(3);
 
 	System.out.println(is.peek());
 	System.out.println(is.pop());
