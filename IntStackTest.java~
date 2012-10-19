@@ -2,7 +2,7 @@ class IntStackTest
 {
     public static void main(String[] args)
     {
-	IntStack is = new IntStack(10);
+	IntStack is = new IntStack(2);
 
 	System.out.println(is.isEmpty());
 
@@ -10,7 +10,7 @@ class IntStackTest
 	is.push(4);
 	is.push(5);
 
-	System.out.println(is.mean());
+	System.out.println((is.mean()));
     }
 }
 	
