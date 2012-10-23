@@ -123,6 +123,30 @@ class IntStack
      */
 
 
+     /*
+     * PopAll
+     * Pops the entire stack
+     * @author Allegra Simon and Alex Fisher
+     */
+   int[]	popAll()
+	{
+	    int[] fullStack = new int[this.size()];
+
+	    for(int i=0; i<this.size(); i++)
+		{
+			
+			fullStack[i] = stack[i];
+			this.pop();
+		}
+
+		return fullStack;
+	}
+
+    /*
+     *
+
+
+
 
 
 }
