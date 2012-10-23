@@ -13,11 +13,13 @@ class IntStackTest
 	is.push(5);
 	is.push(3);
 	is.push(5);
-	is.mode();
-	is.mode(3);
+	//is.mode();
+		//is.mode(3);
+		//is.peek(3);
 
-	System.out.println(is.peek());
-	System.out.println(is.pop());
+	//System.out.println(is.peek());
+	System.out.println(is.peek(5));
+	/**System.out.println(is.pop());
 	System.out.println(is.pop());
 	System.out.println(is.pop());
 	System.out.println(is.pop());
@@ -25,7 +27,7 @@ class IntStackTest
 	System.out.println(is.pop());
 	System.out.println(is.pop());
 	System.out.println(is.isEmpty());
-	System.out.println(is.pop());
+	System.out.println(is.pop());**/
     }
 }
 	

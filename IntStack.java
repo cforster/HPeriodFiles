@@ -42,7 +42,7 @@ class IntStack
 	int[] newStack = new int[stack.length*2];
 	
 	for(int i= 0; i< top; i++) {
-	    stack[i]=newStack[i];
+	    newStack[i]=stack[i];
 	}
 	 
 	//System.out.println("resizing...");
@@ -105,5 +105,24 @@ class IntStack
 	return counter;
 	
     }
+    /*
+     * Peek
+     * Shows a number at a specific position.
+     * Given depth paramter, finds and returns the number at that position
+     * @author Grace Monk
+     * @author Elana Simon
+     * @param depth
+     */
+    int peek(int depth)
+    {
+	if(depth > top) return -1;
+	//System.out.println("Here");
+	//System.out.println(top);
+	//for (int i = 0; i < stack.length; i++) {
+	// System.out.println(stack[i]);
+	//}
+	return stack[depth];
+
+    }//close method
 
 }
