@@ -117,4 +117,12 @@ class IntStack
 	return tot;
     }
 
+    /* 
+     * le ginger's work 
+     *
+     */
+
+
+
+
 }

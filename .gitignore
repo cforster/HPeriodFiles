@@ -20,3 +20,17 @@ Icon
 # Files that might appear on external disk
 .Spotlight-V100
 .Trashes
+
+#global: emacs 
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
