@@ -125,15 +125,4 @@ class IntStack
 
     }//close method
 
-    double mean()
-    {
-        double tot=0;
-	for(int i=0; i < top; i++)
-	    {
-		tot += stack[i];
-	    }
-	tot = tot/top;
-	return tot;
-    }
-
 }
