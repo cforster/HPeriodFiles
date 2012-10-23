@@ -11,6 +11,14 @@ class IntStackTest
 	is.push(5);
 
 	System.out.println(is.mean());
+
+
+	//Tests for popAall
+	System.out.println(is.popAll());
+	System.out.println(is.isEmpty());
+
+
+
     }
 }
 	
