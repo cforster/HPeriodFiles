@@ -125,4 +125,47 @@ class IntStack
 
     }//close method
 
+    double mean()
+    {
+        double tot=0;
+	for(int i=0; i < top; i++)
+	    {
+		tot += stack[i];
+	    }
+	tot = tot/top;
+	return tot;
+    }
+
+    /* 
+     * le ginger's work 
+     *
+     */
+
+
+     /*
+     * PopAll
+     * Pops the entire stack
+     * @author Allegra Simon and Alex Fisher
+     */
+   int[]	popAll()
+	{
+	    int[] fullStack = new int[this.size()];
+
+	    for(int i=0; i<this.size(); i++)
+		{
+			
+			fullStack[i] = stack[i];
+			this.pop();
+		}
+
+		return fullStack;
+	}
+
+    /*
+     *
+
+
+
+
+
 }
