@@ -33,7 +33,7 @@ class IntQueue {
     }
     int size()
     {
-	return front-1;
+	return Math.abs(front-back);
     }
 
    /*
@@ -42,7 +42,7 @@ class IntQueue {
     * @author Allegra Simon and Alex Fisher
     */
 
- int[]	getAll()
+    int[] getAll()
 	{
 	    int[] fullQueue = new int[this.size()];
 
