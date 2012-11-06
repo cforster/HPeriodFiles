@@ -31,4 +31,28 @@ class IntQueue {
     {
 	//to be completed
     }
+    int size()
+    {
+	return front-1;
+    }
+
+   /*
+    * getAll
+    * gets the entire queue
+    * @author Allegra Simon and Alex Fisher
+    */
+
+ int[]	getAll()
+	{
+	    int[] fullQueue = new int[this.size()];
+
+	    for(int i=0; i<this.size(); i++)
+		{
+			
+			fullQueue[i] = q[i];
+			this.get();
+		}
+
+		return fullQueue;
+	}
 }
