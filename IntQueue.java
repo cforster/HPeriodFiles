@@ -31,6 +31,7 @@ class IntQueue {
     {
 	//to be completed
     }
+
     int size()
     {
 	return Math.abs(front-back);
@@ -55,4 +56,16 @@ class IntQueue {
 
 		return fullQueue;
 	}
+
+    int[] get(int x)
+    {
+	int[] mini = new int[x];
+	int counter=0;
+	while(counter<x)
+	    {
+		mini[counter++]= this.get();
+		
+	    }
+	return mini;
+    }
 }
