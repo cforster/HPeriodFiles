@@ -37,6 +37,8 @@ class IntStackTest
 	System.out.println(is.popAll());
 	System.out.println(is.isEmpty());
 
+	//test peek:
+	System.out.println(is.peekNum(4));
 
 
 

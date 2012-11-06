@@ -161,8 +161,21 @@ class IntStack
 		return fullStack;
 	}
 
+    
+
     /*
-     *
+     * Casey, Sonia, Jenna, Rachel
+     * Searches through the stack for certain number.
+     * Return: true or false. 
+     */
+    boolean peekNum(int num)
+    {
+	boolean peekNum = false;
+	for(int i = 0; i<stack.length; i++)
+	    if(stack[i]==num) 
+		peekNum = true;
+	return peekNum;
+    }
 
 
 
