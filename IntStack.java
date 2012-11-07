@@ -1,3 +1,6 @@
+import java.util.Scanner;
+//CHANGE
+
 class IntStack
 {
     //todo:
@@ -83,10 +86,11 @@ class IntStack
 	    {
 		if (stack[j] == stack[i]) ++count;
 	    }
-        if (count > maxCount) {
+        if (count > maxCount) 
+	    {
             maxCount = count;
             maxValue = stack[i];
-        }
+	    }
 	}
     return maxValue;
 	
@@ -105,6 +109,7 @@ class IntStack
 	return counter;
 	
     }
+
     /*
      * Peek
      * Shows a number at a specific position.
@@ -124,6 +129,16 @@ class IntStack
 	return stack[depth];
 
     }//close method
+
+    
+    void popUntil(int f)
+    {
+	int position = 0;
+	while (peek () != f) 
+     {
+	 pop();
+     }
+    }
 
     double mean()
     {
