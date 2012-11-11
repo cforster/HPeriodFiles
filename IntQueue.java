@@ -68,4 +68,32 @@ class IntQueue {
 	    }
 	return mini;
     }
+
+    /*
+     *Subque
+     *Allows the user to create a subque.
+     *@author Zachary Buttenwieser
+     *@author Adam Phillips
+     *@param s the place you want to start
+     *@param e the place you want to end
+     */
+
+    public Queue subQ(int s, int e) {
+	IntQueue subQ = new IntQueue();
+	if(s<e){
+	    for (int i = s; i < e; i++){
+		subQ.put(q[i]);
+	    }
+	}
+	else if (s> e ) {
+	    for (int i = s; i < q.length; i++) {
+		subQ.put(q[i]);
+	    }
+	    for (int i = 0; i < e; i++) {
+		subQ.put(q[i]);
+	    }
+	}
+	return subQ;
+    }
+
 }
