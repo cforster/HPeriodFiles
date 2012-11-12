@@ -134,6 +134,7 @@ class IntQueue {
 	}
 	return subQ;
     }
+<<<<<<< HEAD
 
     //Sonia and Jenna
     //Mean - gets the average of the Queue 
@@ -180,5 +181,7 @@ class IntQueue {
 	
 
 
+=======
+>>>>>>> Revert "Average - Jenna and Sonia"
 
 }
