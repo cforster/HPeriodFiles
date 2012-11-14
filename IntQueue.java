@@ -5,6 +5,9 @@ class IntQueue {
     private int back=0;
 
 
+    public IntQueue() {
+    }
+
     public IntQueue(int size)
     {
 	q = new int[size];
@@ -78,7 +81,7 @@ class IntQueue {
      *@param e the place you want to end
      */
 
-    public Queue subQ(int s, int e) {
+    public IntQueue subQ(int s, int e) {
 	IntQueue subQ = new IntQueue();
 	if(s<e){
 	    for (int i = s; i < e; i++){
@@ -95,6 +98,7 @@ class IntQueue {
 	}
 	return subQ;
     }
+
     //Sonia and Jenna
     //Mean - gets the average of the Queue 
 
@@ -112,5 +116,31 @@ class IntQueue {
 		    
 		
    }
+
+	/*Cut
+	 *Allows the user to add an int to the front of the queue
+	 *@author Matt Durkin
+	 *@Author Alek Kiprovski
+	 *@Author Richard Chen
+	 */
+    public void cut(int p) {
+	boolean run = true;
+	while (run == true){
+
+	    if  (front > 0) {
+		q[front-1] = p; 
+		front--;
+		run = false;
+	        }
+	    else { //shifts everything by 1
+		for (int i = back; i >= front; i--) {
+		    q[i+1] = q[i];
+		}
+		 front++;
+	    } //else
+	}//while
+    }//cut method
+	
+
 
 }
