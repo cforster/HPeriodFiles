@@ -55,4 +55,35 @@ class IntQueue {
 
 		return fullQueue;
 	}
+    /*
+     *Casey, Rachel
+     *Converts queue to a string
+     */
+    String convertString()
+    {
+	String s = "";
+
+	//go through the whole array
+	//    add  it to s
+
+       	if(front < back)
+	{
+	    for(int i=front; i<back; i++) {
+		s+=q[i];
+	    }
+	  
+	 }
+	else if (back < front)
+	    {
+		for(int i=front; i<q.length; i++) {
+		    s+=q[i];
+		}
+		for (int i=0; i<back; i++){
+		    s+=q[i];
+		}
+	 
+	    }
+	
+	return s;
+    }
 }
