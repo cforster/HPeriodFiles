@@ -37,14 +37,12 @@ class IntStackTest
 	System.out.println(is.popAll());
 	System.out.println(is.isEmpty());
 
-
 	//test peekNum:
 	is.push(4);
 	System.out.println("should be true: " + is.peekNum(4));  //should 
 	is.push(55);
 	is.pop();
 	System.out.println("should be false: " + is.peekNum(55)); //should be false;
-
 
 
 

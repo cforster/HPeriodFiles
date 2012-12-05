@@ -1,4 +1,6 @@
 class IntQueue {
+    //Grace Monk and Elana Simon
+
 
     private int[] q;
     private int front=0;
@@ -93,6 +95,9 @@ class IntQueue {
     }
 
 
+
+
+    //Grace Monk Elana Simon
     int[] get(int x)
     {
 	int[] mini = new int[x];
@@ -100,7 +105,6 @@ class IntQueue {
 	while(counter<x)
 	    {
 		mini[counter++]= this.get();
-		
 	    }
 	return mini;
     }
@@ -113,9 +117,8 @@ class IntQueue {
      *@param s the place you want to start
      *@param e the place you want to end
      */
-
     public IntQueue subQ(int s, int e) {
-	IntQueue subQ = new IntQueue();
+	IntQueue subQ = new IntQueue(40);
 	if(s<e){
 	    for (int i = s; i < e; i++){
 		subQ.put(q[i]);
@@ -135,20 +138,21 @@ class IntQueue {
     //Sonia and Jenna
     //Mean - gets the average of the Queue 
 
-	int size = front-1;
+    /**
 	int mean()
 	{
-		int total = 0;
-		for (int i=0; i < top+1; i++);
-		{
-		    total == total+stack[i];
-		}
-		total = total/top+1;
-		return total;
+	    int size = front-1;
+	    int total = 0;
+	    for (int i=0; i < top+1; i++);
+	    {
+		total+=stack[i];
+	    }
+	    total = total/top+1;
+	    return total;
 	}
 		    
 		
-   }
+    **/
 
 	/*Cut
 	 *Allows the user to add an int to the front of the queue
