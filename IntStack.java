@@ -186,7 +186,7 @@ class IntStack
     boolean peekNum(int num)
     {
 	boolean peekNum = false;
-	for(int i = 0; i<stack.length; i++)
+	for(int i = 0; i<top; i++)
 	    if(stack[i]==num) 
 		peekNum = true;
 	return peekNum;

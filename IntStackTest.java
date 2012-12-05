@@ -36,14 +36,18 @@ class IntStackTest
 	//Tests for popAall
 	System.out.println(is.popAll());
 	System.out.println(is.isEmpty());
-<<<<<<< HEAD
-
-	//test peek:
-	System.out.println(is.peekNum(4));
 
 
+	//test peekNum:
+	is.push(4);
+	System.out.println("should be true: " + is.peekNum(4));  //should 
+	is.push(55);
+	is.pop();
+	System.out.println("should be false: " + is.peekNum(55)); //should be false;
 
-=======
+
+
+
 	System.out.println(is.pop());
     is.push (3);
     is.push (4);
@@ -52,7 +56,7 @@ class IntStackTest
     is.push (7);
     is.push (8);
     is.popUntil (4);
->>>>>>> added popUntil (MD, RC, AK)
+
     }
 }
 	
