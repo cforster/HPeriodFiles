@@ -109,6 +109,7 @@ class IntQueue {
 	return mini;
     }
 
+    
     /*
      *Subque
      *Allows the user to create a subque.
@@ -117,8 +118,14 @@ class IntQueue {
      *@param s the place you want to start
      *@param e the place you want to end
      */
+<<<<<<< HEAD
     public IntQueue subQ(int s, int e) {
 	IntQueue subQ = new IntQueue(40);
+=======
+    /*
+    public Queue subQ(int s, int e) {
+	IntQueue subQ = new IntQueue();
+>>>>>>> Jenna and Sonia
 	if(s<e){
 	    for (int i = s; i < e; i++){
 		subQ.put(q[i]);
@@ -134,6 +141,7 @@ class IntQueue {
 	}
 	return subQ;
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 
@@ -185,23 +193,48 @@ class IntQueue {
 =======
 >>>>>>> Revert "Average - Jenna and Sonia"
 =======
+=======
+    */
+
+>>>>>>> Jenna and Sonia
     //Sonia and Jenna
     //Mean - gets the average of the Queue 
+    //int size = front-1;
+    double mean()
+    {
 
-	int size = front-1;
-	int mean()
-	{
-		int total = 0;
-		for (int i=0; i < top+1; i++);
-		{
-		    total == total+stack[i];
-		}
-		total = total/top+1;
-		return total;
+	double total = 0;
+	double mean;
+	int counter = 0;
+	
+	if (front <= back) {
+	    for (int i=front; i < back; i++) {
+		total += q[i];
+		counter++;
+	    }
+	} else {
+	    for (int i = 0; i < back; i++) {
+		total += q[i];
+		counter++;
+	    }
+	    for (int i = front; i < q.length; i++) {
+ 		total += q[i];
+	       	counter++;
+	    }
 	}
+<<<<<<< HEAD
 		    
 		
    }
 >>>>>>> Revert "Revert "Average - Jenna and Sonia""
 
+=======
+	mean = total/counter;	    
+	return mean;
+    }
+    
+    
+>>>>>>> Jenna and Sonia
 }
+
+
