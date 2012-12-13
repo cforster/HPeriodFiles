@@ -135,6 +135,7 @@ class IntQueue {
 	return subQ;
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     //Sonia and Jenna
     //Mean - gets the average of the Queue 
@@ -183,5 +184,24 @@ class IntQueue {
 
 =======
 >>>>>>> Revert "Average - Jenna and Sonia"
+=======
+    //Sonia and Jenna
+    //Mean - gets the average of the Queue 
+
+	int size = front-1;
+	int mean()
+	{
+		int total = 0;
+		for (int i=0; i < top+1; i++);
+		{
+		    total == total+stack[i];
+		}
+		total = total/top+1;
+		return total;
+	}
+		    
+		
+   }
+>>>>>>> Revert "Revert "Average - Jenna and Sonia""
 
 }
