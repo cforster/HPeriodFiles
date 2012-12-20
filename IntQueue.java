@@ -1,14 +1,9 @@
 class IntQueue {
-    //Grace Monk and Elana Simon
-
 
     private int[] q;
     private int front=0;
     private int back=0;
 
-
-    public IntQueue() {
-    }
 
     public IntQueue(int size)
     {
@@ -62,42 +57,6 @@ class IntQueue {
 		return fullQueue;
 	}
 
-    /*
-     *Casey, Rachel
-     *Converts queue to a string
-     */
-    String convertString()
-    {
-	String s = "";
-
-	//go through the whole array
-	//    add  it to s
-
-       	if(front < back)
-	{
-	    for(int i=front; i<back; i++) {
-		s+=q[i];
-	    }
-	  
-	 }
-	else if (back < front)
-	    {
-		for(int i=front; i<q.length; i++) {
-		    s+=q[i];
-		}
-		for (int i=0; i<back; i++){
-		    s+=q[i];
-		}
-	 
-	    }
-	
-	return s;
-    }
-
-
-
-
-    //Grace Monk Elana Simon
     int[] get(int x)
     {
 	int[] mini = new int[x];
@@ -105,6 +64,7 @@ class IntQueue {
 	while(counter<x)
 	    {
 		mini[counter++]= this.get();
+		
 	    }
 	return mini;
     }
@@ -118,14 +78,9 @@ class IntQueue {
      *@param s the place you want to start
      *@param e the place you want to end
      */
-<<<<<<< HEAD
-    public IntQueue subQ(int s, int e) {
-	IntQueue subQ = new IntQueue(40);
-=======
     /*
     public Queue subQ(int s, int e) {
 	IntQueue subQ = new IntQueue();
->>>>>>> Jenna and Sonia
 	if(s<e){
 	    for (int i = s; i < e; i++){
 		subQ.put(q[i]);
@@ -141,62 +96,8 @@ class IntQueue {
 	}
 	return subQ;
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-    //Sonia and Jenna
-    //Mean - gets the average of the Queue 
-
-    /**
-	int mean()
-	{
-	    int size = front-1;
-	    int total = 0;
-	    for (int i=0; i < top+1; i++);
-	    {
-		total+=stack[i];
-	    }
-	    total = total/top+1;
-	    return total;
-	}
-		    
-		
-    **/
-
-	/*Cut
-	 *Allows the user to add an int to the front of the queue
-	 *@author Matt Durkin
-	 *@Author Alek Kiprovski
-	 *@Author Richard Chen
-	 */
-    public void cut(int p) {
-	boolean run = true;
-	while (run == true){
-
-	    if  (front > 0) {
-		q[front-1] = p; 
-		front--;
-		run = false;
-	        }
-	    else { //shifts everything by 1
-		for (int i = back; i >= front; i--) {
-		    q[i+1] = q[i];
-		}
-		 front++;
-	    } //else
-	}//while
-    }//cut method
-	
-
-
-=======
->>>>>>> Revert "Average - Jenna and Sonia"
-=======
-=======
     */
 
->>>>>>> Jenna and Sonia
     //Sonia and Jenna
     //Mean - gets the average of the Queue 
     //int size = front-1;
@@ -222,19 +123,11 @@ class IntQueue {
 	       	counter++;
 	    }
 	}
-<<<<<<< HEAD
-		    
-		
-   }
->>>>>>> Revert "Revert "Average - Jenna and Sonia""
-
-=======
 	mean = total/counter;	    
 	return mean;
     }
     
     
->>>>>>> Jenna and Sonia
 }
 
 
