@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 //CHANGE
 
 class IntStack
@@ -186,14 +187,36 @@ class IntStack
     boolean peekNum(int num)
     {
 	boolean peekNum = false;
-	for(int i = 0; i<top; i++)
+	for(int i = 0; i<stack.length; i++)
 	    if(stack[i]==num) 
 		peekNum = true;
 	return peekNum;
     }
 
+/*
+ * Pop X number of ints
+ * Ask for X
+ * Run pop X number of times
+ * Move the popped ints into new array
+ * return new array
+ * @author James Shao
+ * @author Ben Ginzberg
+ */
+
+    int[] PopX(int x)
+{
+   int[] popX = new int[this.size()]; //set return array length to equal number of items popped
 
 
+   for(int i=0; i<x; i++) //run loop x number of times
+	{
+	    popX[i]=stack[i]; //put pop int into return array
+	    this.pop();
+	}
+
+    return popX;
+}
+    
 
 
 }

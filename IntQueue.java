@@ -69,7 +69,6 @@ class IntQueue {
 	return mini;
     }
 
-    
     /*
      *Subque
      *Allows the user to create a subque.
@@ -78,7 +77,7 @@ class IntQueue {
      *@param s the place you want to start
      *@param e the place you want to end
      */
-    /*
+
     public Queue subQ(int s, int e) {
 	IntQueue subQ = new IntQueue();
 	if(s<e){
@@ -96,38 +95,30 @@ class IntQueue {
 	}
 	return subQ;
     }
-    */
 
-    //Sonia and Jenna
-    //Mean - gets the average of the Queue 
-    //int size = front-1;
-    double mean()
-    {
+/*
+ * Pop X number of ints
+ * Ask for X
+ * Run pop X number of times
+ * Move the popped ints into new array
+ * return new array
+ * @author James Shao
+ * @author Ben Ginzberg
+ */
 
-	double total = 0;
-	double mean;
-	int counter = 0;
-	
-	if (front <= back) {
-	    for (int i=front; i < back; i++) {
-		total += q[i];
-		counter++;
-	    }
-	} else {
-	    for (int i = 0; i < back; i++) {
-		total += q[i];
-		counter++;
-	    }
-	    for (int i = front; i < q.length; i++) {
- 		total += q[i];
-	       	counter++;
-	    }
+    int[] GetX(int x)
+{
+   int[] getX = new int[this.size()]; //set return array length to equal number of items popped
+
+
+   for(int i=0; i<x; i++) //run loop x number of times
+	{
+	    getX[i]=q[i]; //put pop int into return array
+	    this.get();
 	}
-	mean = total/counter;	    
-	return mean;
-    }
-    
-    
+
+    return getX;
 }
+    
 
-
+}
