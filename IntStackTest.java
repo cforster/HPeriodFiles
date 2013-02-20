@@ -29,6 +29,10 @@ class IntStackTest
 	System.out.println(is.isEmpty());
 	System.out.println(is.pop());**/
 
+        
+    //pop 3 times
+    System.out.println(is.pop(3));
+        
 
 	System.out.println(is.mean());
 

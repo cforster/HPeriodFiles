@@ -1,3 +1,5 @@
+
+
 class IntQueueTest
 {
     public static void main(String[] args)
@@ -11,9 +13,10 @@ class IntQueueTest
 	q.put(3);
 	q.put(4);
 
-	q.cut(2);
 
-	System.out.println(q.get());
+    //test queue pop
+        System.out.println("How many pops? (no scanner, just saying for example, 3 pops)");
+        System.out.println(popX(3));
 
     }
 }

@@ -106,9 +106,9 @@ class IntQueue {
  * @author Ben Ginzberg
  */
 
-    int[] GetX(int x)
+   public int[] popX(int x)
 {
-   int[] getX = new int[this.size()]; //set return array length to equal number of items popped
+   int[] getX = new int[x]; //set return array length to equal number of items popped
 
 
    for(int i=0; i<x; i++) //run loop x number of times

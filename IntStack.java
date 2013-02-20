@@ -203,10 +203,9 @@ class IntStack
  * @author Ben Ginzberg
  */
 
-    int[] PopX(int x)
+    int[] pop(int x)
 {
-   int[] popX = new int[this.size()]; //set return array length to equal number of items popped
-
+   int[] popX = new int[x]; //set return array length to equal number of items popped
 
    for(int i=0; i<x; i++) //run loop x number of times
 	{
