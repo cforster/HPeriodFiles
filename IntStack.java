@@ -131,7 +131,7 @@ class IntStack
 
     }//close method
 
-    //popUntil - Aleks Kiprovski
+    //popUntil - Aleks Kiprovski, Matt Durkin, Richard Chen
     void popUntil(int f)
     {
 	int position = 0;
