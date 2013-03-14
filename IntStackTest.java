@@ -59,6 +59,21 @@ class IntStackTest
     is.push (8);
     is.popUntil (4);
 
+ //fisher tests popall:
+    is.push (1);
+    is.push (2);
+    is.push (3);
+
+    int test =0;
+    while(test<3)
+    {
+    	System.out.println(is.pop());
+    	test++;
+    }
+
+    System.out.println(is.isEmpty());
+    
+
     }
 }
 	
